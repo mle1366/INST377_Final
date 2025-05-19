@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title> INST377 - Final Project - Home </title>
+        <link rel="stylesheet" href="final.css">
+
+        <script type="text/javascript" src="final.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1><b>Find the right product for you!</b></h1>
+        </header>
+
+        <nav id = "main-nav">
+            <a href = "home.html" class = "home">Home</a>
+            <a href="about.html" class = "about">About</a>
+            <a href="core.html" class = "core">Quiz</a>
+        </nav>
+        <div class="quiz">
+        <form id="quiz-form" onsubmit="event.preventDefault(); findMakeup();">
+            <label for="product-type">What kind of product are you looking for?</label>
+            <select name="product-type" id="product-type" required>
+              <option value="">Select</option>
+              <option value="blush">Blush</option>
+              <option value="bronzer">Bronzer</option>
+              <option value="eyebrow">Eyebrow</option>
+              <option value="eyeliner">Eyeliner</option>
+              <option value="eyeshadow">Eyeshadow</option>
+              <option value="foundation">Foundation</option>
+              <option value="lipliner">Lip Liner</option>
+              <option value="lipstick">Lipstick</option>
+              <option value="mascara">Mascara</option>
+            </select>
+            <br><br>
+            <label for="price-range">What is your price range?</label>
+            <select name="price-range" id="price-range" required>
+              <option value="">Select</option>
+              <option value="low-price">$1 - $15</option>
+              <option value="medium-price">$16 - $30</option>
+              <option value="high-price">$31 - $45</option>
+              <option value="highest-price">> $45</option>
+            </select>
+            <br><br>
+            <label for="tags">Pick a tag to filter</label>
+            <select name="tags" id="tags" required>
+              <option value="">Select</option>
+              <option value="canadian">Canadian</option>
+              <option value="certclean">CertClean</option>
+              <option value="chemical free">Chemical Free</option>
+              <option value="dairy free">Dairy Free</option>
+              <option value="ewg verified">EWG Verified</option>
+              <option value="ecocert">EcoCert</option>
+              <option value="fair trade">Fair Trade</option>
+              <option value="gluten free">Gluten Free</option>
+              <option value="hypoallergenic">Hypoallergenic</option>
+              <option value="natural">Natural</option>
+              <option value="no talc">No Talc</option>
+              <option value="non-gmo">Non-GMO</option>
+              <option value="organic">Organic</option>
+              <option value="peanut free product">Peanut Free Product</option>
+              <option value="sugar free">Sugar Free</option>
+              <option value="usda organic">USDA Organic</option>
+              <option value="vegan">Vegan</option>
+              <option value="alcohol free">Alcohol Free</option>
+              <option value="cruelty free">Cruelty Free</option>
+              <option value="oil free">Oil Free</option>
+              <option value="purpicks">Purpicks</option>
+              <option value="silicone free">Silicone Free</option>
+              <option value="water free">Water Free</option>
+            </select>
+        
+            <br><br>
+            <button type="submit">Submit Your Answers!</button>
+          </form>
+        </div>
+          <h2 id="loading_results2"></h2>
+          <div id="results"></div>
+    </body>
+</html>

@@ -1,0 +1,225 @@
+body {
+    background-color: rgb(241, 214, 218);
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+}
+
+.my-path {
+    fill:none;
+    stroke:#cfc33a;
+    stroke-width:4;
+  }
+
+#main-nav {
+    text-align:center;
+}
+#main-nav a {
+    display: inline-block;
+    margin:0 20px;
+    padding:10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#main-nav a:hover {
+    background-color: rgb(227, 190, 222);
+    color:black;
+}
+
+/*Home Page*/
+#makeup-image img {
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+}
+.button-56 {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: inline-block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;                                      
+}
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+.button-56:hover {
+  outline: 0;
+}
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+.page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+.home-content {
+    border: 2px solid rgb(110, 110, 110);
+    background-color: cornsilk;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    font-family: monospace;
+    padding: 20px;
+    gap: 15px;
+    overflow: visible;
+}
+
+.side-content {
+    border: 2px solid rgb(110, 110, 110);
+    background-color: cornsilk;
+    padding: 20px;
+    width: 30%;
+    font-family: monospace;
+}
+  
+.search input[type="submit"] {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #ffdeda;
+    color: black;
+    border: 2px solid #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.search input[type="submit"]:hover {
+    background-color: #a4caf3;
+}
+
+#slider {
+    width: 90%;
+    margin: 0 auto;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  #slider img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+/* About */
+.about-container {
+    border: 2px solid rgb(110, 110, 110);
+    background-color: cornsilk;
+    display: center;
+    align-items: center;
+    line-height: 2;
+    font-family: monospace;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+    margin: 80px;
+}
+/* Quiz Page */
+.quiz {
+    border: 2px solid rgb(110, 110, 110);
+    background-color: cornsilk;
+    display: center;
+    align-items: center;
+    line-height: 2;
+    font-family: monospace;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+    margin: 80px;
+  }
+
+.quiz label, .quiz select {
+    display: center;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.quiz button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+
+#loading_results2 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.results-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.result-card {
+    display: flex;
+    gap: 16px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.result-card img {
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.result-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-info p {
+    margin: 4px 0;
+}

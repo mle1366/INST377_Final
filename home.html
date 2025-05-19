@@ -1,0 +1,52 @@
+<!-- Home Page -->
+
+<html>
+    <head>
+        <title> INST377 - Final Project - Home </title>
+        <link rel="stylesheet" href="final.css">
+        <script type="text/javascript" src="final.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1><b>Welcome!</b></h1>
+        </header>
+
+        <nav id = "main-nav">
+            <a href = "home.html" class = "home">Home</a>
+            <a href="about.html" class = "about">About</a>
+            <a href="core.html" class = "core">Quiz</a>
+        </nav>
+        <div class="page-container">
+            <div class="home-content">
+              <h2>Take a quick quiz to find the right products for you</h2>
+              <button class="button-56" role="button" onclick="window.location.href='core.html'">Click Here!</button>
+            </div>
+          
+            <aside class="side-content">
+              <h2>Browse Products</h2>
+              <form id="browse" onsubmit="findProduct(event)">
+                <div class="search">
+                  <h3><b>Please enter product name: </b></h3>
+                  <input id="makeup_name" name="makeupName" onsubmit="findProduct(event)" required>
+                  <input type="submit" value="Search" id="search-button">
+                </div>
+              </form>
+            </aside>
+          </div>
+
+            <h2 id="loading_results"></h2>
+    
+            <table id="result_Table">
+                <thead style="display: none;">
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Brand</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="productResults"></tbody>
+            </table>
+        </aside>
+    </body>
+</html>
