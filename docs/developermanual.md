@@ -1,14 +1,15 @@
 Developer Manual
 
 How to install the software
-1. Clone the github reopsitory
+1. Clone the github reopsitory: 
+(- git clone <repository> or use GitHub Desktop application)
 
-How to run your application on a server
+API
+* /get ElementById: get product-type, price-range, tags from API or load results from quiz and browing products
 
-How to run any tests you have written for your software
+Known Bugs
+Products may not be sold or discontinued
 
-The API for your server application - all GET, POST, PATCH, etc endpoints, and what they each do
-
-A clear set of expectations around known bugs and a road-map for future development.
-
-Team members: Melissa Le
+Roadmap
+Allow users to include multiple tags if they have multiple allergies.
+Improve on overall performance and user intergace experience.
